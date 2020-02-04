@@ -404,6 +404,8 @@
             <FormType>fmx</FormType>
         </DCCReference>
         <DCCReference Include="Core.pas"/>
+        <DCCReference Include="_LIBRARY\LUXOPHIA\LUX\Data\Tree\LUX.Data.Tree.core.pas"/>
+        <DCCReference Include="_LIBRARY\LUXOPHIA\LUX\Data\Tree\LUX.Data.Tree.Node.pas"/>
         <DCCReference Include="_LIBRARY\LUXOPHIA\LUX\Data\Tree\LUX.Data.Tree.pas"/>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>
