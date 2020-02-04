@@ -4,9 +4,8 @@ uses
   System.StartUpCopy,
   FMX.Forms,
   Main in 'Main.pas' {Form1},
-  LUX in '_LIBRARY\LUXOPHIA\LUX\LUX.pas',
   Core in 'Core.pas',
-  LUX.Data.Tree in '_LIBRARY\LUXOPHIA\LUX\Data\LUX.Data.Tree.pas';
+  LUX.Data.Tree in '_LIBRARY\LUXOPHIA\LUX\Data\Tree\LUX.Data.Tree.pas';
 
 {$R *.res}
 

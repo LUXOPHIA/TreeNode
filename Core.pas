@@ -97,7 +97,7 @@ procedure ShowTree( const TreeView_:TTreeView; const Root_:TMyNode );
 
           P.Parent := Parent_;
 
-          if Assigned( TreeNode_.Paren ) then S := TreeNode_.Order.ToString
+          if Assigned( TreeNode_.Parent ) then S := TreeNode_.Order.ToString
                                          else S := '-';
 
           P.Text   := S + ' [' + TreeNode_.Name + '] ' + TreeNode_.ChildsN.ToString;
@@ -191,7 +191,7 @@ begin
      P := FindNode( Root_ );
 
      case Random( 2 ) of
-       0: TMyNode.Create.Paren := P;
+       0: TMyNode.Create.Parent := P;
        1: TMyNode.Create( P );
      end;
 end;
@@ -208,7 +208,7 @@ begin
           if P.ChildsN = 0 then
           begin
                case Random( 3 ) of
-                 0: C.Paren := P;
+                 0: C.Parent := P;
                  1: P.InsertHead( C );
                  2: P.InsertTail( C );
                end;
@@ -216,7 +216,7 @@ begin
           else
           begin
                case Random( 9 ) of
-                 0: C.Paren := P;
+                 0: C.Parent := P;
                  1: P.InsertHead( C );
                  2: P.InsertTail( C );
                  3: TMyNode( P.Head ).InsertPrev( C );                           {本来キャスト不要}
